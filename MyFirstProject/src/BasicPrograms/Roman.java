@@ -3,7 +3,7 @@ package BasicPrograms;
 import java.util.HashMap;
 
 public class Roman {
-    public static int RomantoInt (String S) {
+    public int RomantoInt (String S) {
         HashMap<Character, Integer> hashMap = new HashMap<>();
         hashMap.put('I', 1);
         hashMap.put('V', 5);
@@ -55,7 +55,8 @@ public class Roman {
 
     }
     public static void main(String[] args) {
-       int x = Roman.RomantoInt("III");
+        Roman obj = new Roman();
+       int x = obj.RomantoInt("IV");
        System.out.println(x);
     }
 }
