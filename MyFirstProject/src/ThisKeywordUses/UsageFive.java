@@ -24,7 +24,7 @@ class Test{
     }
 
     void display(){
-        System.out.println("The number is: " + obj.n);
+        System.out.println("The number is: " + obj.n); //we accessed the instance variable with the help of object here
     }
 }
 
