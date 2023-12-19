@@ -5,7 +5,16 @@ public class UsageFive {
     int n = 100;
     UsageFive(){
 
-        Test ob = new Test(this); //this can be used to be passed as argument in the constructor call
+        //Test ob = new Test(this); //this can be used to be passed as argument in the constructor call
+        method1();
+    }
+
+    void method1() {
+        Test ob1 = new Test(this);
+    }
+
+    void display(){
+        System.out.println("Hello!");
     }
 
     public static void main(String[] args) {
@@ -20,6 +29,7 @@ class Test{
     UsageFive obj;
     Test(UsageFive obj){
         this.obj = obj;
+        obj.display();
         display();
     }
 
