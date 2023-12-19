@@ -10,7 +10,7 @@ public class UsageFive {
     }
 
     void method1() {
-        Test ob1 = new Test(this);
+        Test ob1 = new Test(this); //when we send this as parameter in constructor call to basically send the instance of this class
     }
 
     void display(){
@@ -27,9 +27,9 @@ public class UsageFive {
 class Test{
 
     UsageFive obj;
-    Test(UsageFive obj){
+    Test(UsageFive obj){ //as we see here obj is an instance of class UsageFive
         this.obj = obj;
-        obj.display();
+        obj.display(); //we are able to call the instance method display of class UsageFive using its object
         display();
     }
 
