@@ -1,4 +1,4 @@
-package BasicPrograms;
+package Algorithms;
 
 public class BinarySearch {
 
